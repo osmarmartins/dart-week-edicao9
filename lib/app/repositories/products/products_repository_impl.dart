@@ -16,7 +16,7 @@ class ProductsRepositoryImpl implements ProductsRepository {
   @override
   Future<List<ProductModel>> findAllProducts() async {
     try {
-      final result = await dio.unauth().get('/products');
+      final result = await dio.unAuth().get('/products');
       return result.data
           .map<ProductModel>((p) => ProductModel.fromMap(p))
           .toList();

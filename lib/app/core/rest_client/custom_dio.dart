@@ -19,7 +19,7 @@ class CustomDio extends DioForNative {
     return this;
   }
 
-  CustomDio unauth() {
+  CustomDio unAuth() {
     return this;
   }
 }
