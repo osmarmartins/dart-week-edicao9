@@ -1,3 +1,5 @@
+// Rodar o builder runner para gerar classe Match (flutter pub run build_runner watch -d)
+
 import 'package:equatable/equatable.dart';
 import 'package:match/match.dart';
 

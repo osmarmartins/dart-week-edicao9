@@ -14,7 +14,9 @@ class ApplicationBiding extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        Provider(create: (context) => CustomDio()),
+        Provider(
+          create: (context) => CustomDio(),
+        ),
         Provider<AuthRepository>(
             create: (context) => AuthRepositoryImpl(dio: context.read())),
       ],
